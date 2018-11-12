@@ -9,5 +9,7 @@ namespace ScriptCycleSample.Data {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options) {
         }
+
+        public DbSet<SimpleProduct> SimpleProducts { get; set; }
     }
 }
